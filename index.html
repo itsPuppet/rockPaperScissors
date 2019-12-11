@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let randomNum = Math.floor(Math.random() * Math.floor(3))
-        function computerPlay() {
-       /* let randomNum = Math.floor(Math.random() * Math.floor(3)); */
-        console.log(randomNum);
-        if (randomNum === 0) {
-            console.log("Rock");
-        } else if (randomNum === 1) {
-            console.log("Paper");
-        } else if (randomNum === 2)
-            console.log("Scissors");
-        
-        }
-        computerPlay();
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+    <body>
+        <script>
+            // Code from the page.
+            function playRound(playerSelection, computerSelection) {
+
+                let randomNum = Math.floor(Math.random() * Math.floor(3))
+                
+                function computerPlay() {
+                    console.log(randomNum);
+                    if (randomNum === 0) {
+                        console.log("Rock");
+                    } else if (randomNum === 1) {
+                        console.log("Paper");
+                    } else if (randomNum === 2)
+                        console.log("Scissors");
+                }
+             }
+
+            const playerSelection = 'rock'
+            const computerSelection = computerPlay()
+            console.log(playRound(playerSelection, computerSelection))
     
-    </script>
-</body>
+        </script>
+    </body>
 </html>
